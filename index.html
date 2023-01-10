@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
-</head>
-<body>
-    <H1>Test</H1>
-</body>
-<script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container m-0">
+      <div class="content-left">
+        <img class="img-w" src="img/elesis.png" alt="" srcset="" />
+      </div>
+      <div class="content-middle">
+        <img class="img-w" src="img/sign.png" alt="" srcset="" />
+        <div id="estadistics" class="estadistics">
+          <div class="estadistics-text">
+            <p>CPU WINS :</p>
+            <p id="cpu">0</p>
+          </div>
+          <div class="estadistics-text">
+            <p>PLAYER WINS :</p>
+            <p id="player">0</p>
+          </div>
+          <div class="estadistics-text">
+            <p>DRAWS :</p>
+            <p id="draw">0</p>
+          </div>
+        </div>
+        <button id="btn-start" class="btn">START</button>
+        <div id="election-left" class="election-left">
+          <div class="images">
+            <img
+              class="text-cloud-left"
+              src="img/text-cloud-left.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="position-left"
+              class="position-left"
+              src="img/random-sprite.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div id="election-right" class="election-right">
+          <div class="images">
+            <img
+              class="text-cloud-right"
+              src="img/text-cloud-right.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="position-right"
+              class="position-right"
+              src="img/paper-sprite.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div id="select-buttons" class="select-buttons">
+          <button id="scissors" class="select-btn">
+            <img src="img/scissors-sprite.png" alt="" srcset="" />
+          </button>
+
+          <button id="rock" class="select-btn">
+            <img src="img/rock-sprite.png" alt="" srcset="" />
+          </button>
+
+          <button id="paper" class="select-btn">
+            <img src="img/paper-sprite.png" alt="" srcset="" />
+          </button>
+
+          <button id="random" class="select-btn">
+            <img src="img/random-sprite.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+      <div class="content-right">
+        <img class="img-w" src="img/gaikoz.png" alt="" srcset="" />
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
 </html>
